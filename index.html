@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TikDev.Mp3</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <video autoplay muted loop id="bg-video">
+    <source src="https://files.catbox.moe/7v6clb.mp4" type="video/mp4">
+  </video>
+
+  <div class="container">
+    <a href="#" class="btn-dev">Kusus Developer</a>
+
+    <h1 class="site-title">TikS.Mp3</h1>
+    <p class="subtitle">Download MP3 TikTok</p>
+
+    <div class="downloader-card">
+      <video autoplay muted loop id="card-bg-video">
+        <source src="https://files.catbox.moe/j37n48.mp4" type="video/mp4">
+      </video>
+      
+      <div class="card-content">
+        <input type="text" id="tiktok-url" placeholder="Tempel Link TikTok di sini..." />
+        <button id="banner-btn" class="banner-btn" onclick="fetchAudio()">Download MP3</button>
+      </div>
+    </div>
+
+    <div id="result-container" class="result-container hidden">
+      <div id="loading" class="loading hidden">Memproses audio...</div>
+      <div id="audio-result" class="audio-result hidden">
+        <img id="music-cover" src="" alt="Cover Musik" />
+        <h3 id="music-title">Judul Lagu</h3>
+        <p id="music-author">Artist</p>
+        <a id="audio-download-link" href="#" target="_blank" download class="dl-link">Simpan MP3</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
